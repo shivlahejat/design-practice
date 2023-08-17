@@ -29,24 +29,24 @@ const bannerDesigns = [
 ];
 
 const BannerView = () => {
-  const [currentDesignIndex, setCurrentDesignIndex] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   const handleNextClick = () => {
-    const nextIndex = (currentDesignIndex + 1) % bannerDesigns.length;
-    setCurrentDesignIndex(nextIndex);
+    const nextIndex = (currentIndex + 1) % bannerDesigns.length;
+    setCurrentIndex(nextIndex);
   };
 
   const handlePrevClick = () => {
     const prevIndex =
-      (currentDesignIndex - 1 + bannerDesigns.length) % bannerDesigns.length;
-    setCurrentDesignIndex(prevIndex);
+      (currentIndex - 1 + bannerDesigns.length) % bannerDesigns.length;
+    setCurrentIndex(prevIndex);
   };
 
   const handleDotClick = (index) => {
-    setCurrentDesignIndex(index);
+    setCurrentIndex(index);
   };
 
-  const currentDesign = bannerDesigns[currentDesignIndex];
+  const currentDesign = bannerDesigns[currentIndex];
   return (
     <Wrapper>
       <Banner>
@@ -70,7 +70,7 @@ const BannerView = () => {
         {bannerDesigns.map((design, index) => (
           <Dot
             key={index}
-            isActive={index === currentDesignIndex}
+            isActive={index === currentIndex}
             onClick={() => handleDotClick(index)}
           />
         ))}
