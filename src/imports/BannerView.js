@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const bannerDesigns = [
   {
-    name: "Shiv",
+    name: "Shiv Lahejatwala",
     role: "CEO",
     bio: "“Our dedicated patient engagement app and web portal allow you to access information instantaneously (no tedious form, long calls, or administrative hassle) and securely”",
     image: "/static/images/landingView/Person.png",
