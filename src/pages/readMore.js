@@ -34,10 +34,11 @@ const HomePage = () => {
 export default HomePage;
 
 const Wrapper = styled.div`
-  max-width: 800px;
-  padding: 10px;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  max-width: 800px;
+  padding: 10px;
+  background: #dbd;
 `;
 
 const MainDiv = styled.div`
