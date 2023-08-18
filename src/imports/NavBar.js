@@ -31,8 +31,10 @@ const NavBar = () => {
             <NavLink active={router.pathname === "/testingDesign"}>
               <Link href="/testingDesign">Testimonials</Link>
             </NavLink>
-            <NavLink active={router.pathname === "/testingDesign"}>
-              <Link href="/testingDesign">About us</Link>
+            <NavLink>
+              <Link href="https://shivlahejat.netlify.app/" target="_blank">
+                About us
+              </Link>
             </NavLink>
           </NavLinkDesktop>
           <MobileNavToggle onClick={toggleMobileNav}>
@@ -52,8 +54,10 @@ const NavBar = () => {
               <NavLink active={router.pathname === "/testingDesign"}>
                 <Link href="/testingDesign">Testimonials</Link>
               </NavLink>
-              <NavLink active={router.pathname === "/testingDesign"}>
-                <Link href="/testingDesign">About us</Link>
+              <NavLink>
+                <Link href="https://shivlahejat.netlify.app/" target="_blank">
+                  About us
+                </Link>
               </NavLink>
             </LinkWrap>
           </MobileNavLinks>

@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const HomePage = () => {
   const initialContent =
-    "Incididunt consectetur amet velit ea occaecat mollit tempor aliqua duis. Laborum aliqua deserunt exercitation laborum reprehenderit in velit reprehenderit aute. Dolor ea labore commodo esse.Ad occaecat anim adipisicing tempor tempor nostrud excepteur sit qui mollit dolore. Commodo eiusmod sunt do id. Dolore elit mollit ad tempor aliqua irure ipsum. Mollit laboris enim sint ex ut laborum exercitation labore ipsum amet ullamco irure pariatur Lorem. Aute ullamco pariatur laboris enim irure eiusmod enim aute exercitation. Esse officia sunt eu nisi velit fugiat. Sunt magna veniam qui pariatur cillum cillum enim consectetur deserunt.Ullamco fugiat magna laborum esse dolor nostrud. Incididunt est nisi irure sunt consectetur quis pariatur qui eiusmod id veniam. Ipsum quis tempor pariatur sint occaecat tempor labore eu ullamco excepteur et.";
+    "What is a paragraph? Paragraphs are the building blocks of papers. Many students define paragraphs in terms of length: a paragraph is a group of at least five sentences, a paragraph is half a page long, etc. In reality, though, the unity and coherence of ideas among sentences is what constitutes a paragraph.";
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleContent = () => {
