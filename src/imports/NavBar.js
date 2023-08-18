@@ -17,7 +17,7 @@ const NavBar = () => {
     <>
       <HeaderContainer>
         <NavContainer>
-          <NavBrand>SHIV</NavBrand>
+          <NavBrand href="/">SHIV</NavBrand>
           <NavLinkDesktop>
             <NavLink active={router.pathname === "/"}>
               <Link href="/">Home</Link>
@@ -25,8 +25,8 @@ const NavBar = () => {
             <NavLink active={router.pathname === "/testingDesign"}>
               <Link href="/testingDesign">Testing Design</Link>
             </NavLink>
-            <NavLink active={router.pathname === "/testingDesign"}>
-              <Link href="/testingDesign">Apps</Link>
+            <NavLink active={router.pathname === "/readMore"}>
+              <Link href="/readMore">Apps</Link>
             </NavLink>
             <NavLink active={router.pathname === "/testingDesign"}>
               <Link href="/testingDesign">Testimonials</Link>
@@ -46,8 +46,8 @@ const NavBar = () => {
               <NavLink active={router.pathname === "/testingDesign"}>
                 <Link href="/testingDesign">Testing Design</Link>
               </NavLink>
-              <NavLink active={router.pathname === "/testingDesign"}>
-                <Link href="/testingDesign">Apps</Link>
+              <NavLink active={router.pathname === "/readMore"}>
+                <Link href="/readMore">Apps</Link>
               </NavLink>
               <NavLink active={router.pathname === "/testingDesign"}>
                 <Link href="/testingDesign">Testimonials</Link>
@@ -94,6 +94,7 @@ const NavBrand = styled.a`
   font-weight: bold;
   color: #000;
   font-family: "MulishSemiBold";
+  cursor: pointer;
 
   &:hover {
     text-decoration: none;
