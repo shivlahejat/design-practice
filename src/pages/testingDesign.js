@@ -1,3 +1,5 @@
+import { InputBox } from "@/atoms/InputBox";
+import LabelText from "@/atoms/Text";
 import Head from "next/head";
 import React from "react";
 import styled, { css } from "styled-components";
@@ -25,22 +27,16 @@ const testingDesign = () => {
             <FormDatas>
               <InputDiv>
                 <InputWrap>
-                  <Label>
-                    Email <span>*</span>
-                  </Label>
-                  <Input />
+                  <LabelText text="Email" />
+                  <InputBox />
                 </InputWrap>
                 <InputWrap>
-                  <Label>
-                    Full name <span>*</span>
-                  </Label>
-                  <Input />
-                </InputWrap>{" "}
+                  <LabelText text="FullName" />
+                  <InputBox />
+                </InputWrap>
                 <InputWrap>
-                  <Label>
-                    Password <span>*</span>
-                  </Label>
-                  <Input />
+                  <LabelText text="Password" />
+                  <InputBox />
                 </InputWrap>
               </InputDiv>
               <ButtonWrap>
@@ -119,30 +115,6 @@ const InputDiv = styled.div`
   display: flex;
   flex-direction: column;
   gap: 47px;
-`;
-
-const Label = styled.div`
-  color: #343434;
-  font-family: "GilroySemiBold";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 550;
-  line-height: normal;
-  letter-spacing: 0.207px;
-
-  span {
-    color: #f00;
-  }
-`;
-
-const Input = styled.input`
-  line-height: 24px;
-  border: none;
-  border-bottom: 1px solid !important;
-
-  &:focus {
-    outline: none;
-  }
 `;
 
 const InputWrap = styled.div`

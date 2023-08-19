@@ -1,6 +1,7 @@
+import ButtonWrap from "@/atoms/Button";
 import Search from "@/atoms/Search";
 import React from "react";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 const ServiceView = () => {
   return (
@@ -18,11 +19,11 @@ const ServiceView = () => {
       <BgImg />
       <CardDetail>
         <GG>
-          {[...Array(3)].map((_, j) => {
+          {[...Array(6)].map((_, j) => {
             return (
               <Card key={j}>
                 <Search />
-                <CardTitle>Search doctor</CardTitle>
+                <Title fontSize>Search doctor</Title>
                 <CardSubTitle>
                   Choose your doctor from thousands of specialist, general, and
                   trusted hospitals
@@ -31,42 +32,13 @@ const ServiceView = () => {
             );
           })}
         </GG>
-        <GG>
-          {[...Array(3)].map((_, j) => {
-            return (
-              <Card key={j}>
-                <Search />
-                <CardTitle>Search doctor</CardTitle>
-                <CardSubTitle>
-                  Choose your doctor from thousands of specialist, general, and
-                  trusted hospitals
-                </CardSubTitle>
-              </Card>
-            );
-          })}
-        </GG>
-        <Btn>Learn More</Btn>
+        <ButtonWrap text="Learn More" />
       </CardDetail>
     </Wrapper>
   );
 };
 
 export default ServiceView;
-
-const Btn = styled.div`
-  color: #458ff6;
-  font-family: "MulishBold";
-  text-align: center;
-  font-size: 18px;
-  padding: 15px;
-  cursor: pointer;
-  border-radius: 55px;
-  border: 1.4px solid #458ff6;
-
-  &:hover {
-    background: #f3f3f3;
-  }
-`;
 
 const BgImg = styled.div`
   width: 937.951px;
@@ -78,6 +50,9 @@ const BgImg = styled.div`
 
 const GG = styled.div`
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1120px;
   gap: 35px;
 `;
 
@@ -86,13 +61,6 @@ const CardSubTitle = styled.div`
   font-family: "MulishLight";
   font-size: 16px;
   line-height: 28px;
-`;
-
-const CardTitle = styled.div`
-  color: #000;
-  font-family: "MulishBold";
-  font-size: 24px;
-  line-height: 56px;
 `;
 
 const Card = styled.div`
@@ -104,8 +72,7 @@ const Card = styled.div`
   background: #fff;
   z-index: 9999;
   cursor: pointer;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
-    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 `;
 
 const CardDetail = styled.div`
@@ -145,6 +112,12 @@ const Title = styled.div`
   font-family: "MulishBold";
   font-size: 36px;
   line-height: 56px;
+
+  ${({ fontSize }) =>
+    fontSize &&
+    css`
+      font-size: 24px;
+    `}
 `;
 
 const Border = styled.div`
