@@ -29,7 +29,7 @@ const NavBar = () => {
               <Link href="/readMore">Apps</Link>
             </NavLink>
             <NavLink active={router.pathname === "/testingDesign"}>
-              <Link href="/testingDesign">Testimonials</Link>
+              <Link href="/tabChange">tabChange</Link>
             </NavLink>
             <NavLink>
               <Link href="https://shivlahejat.netlify.app/" target="_blank">
@@ -52,7 +52,7 @@ const NavBar = () => {
                 <Link href="/readMore">Apps</Link>
               </NavLink>
               <NavLink active={router.pathname === "/testingDesign"}>
-                <Link href="/testingDesign">Testimonials</Link>
+                <Link href="/tabChange">tabChange</Link>
               </NavLink>
               <NavLink>
                 <Link href="https://shivlahejat.netlify.app/" target="_blank">
