@@ -11,6 +11,7 @@ import React from "react";
 import styled from "styled-components";
 
 const index = () => {
+  console.log("first");
   return (
     <>
       <Head>
