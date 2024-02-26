@@ -1,6 +1,6 @@
+import ButtonWrap from "@/atoms/Button";
 import React from "react";
 import styled from "styled-components";
-
 const HealthView = () => {
   return (
     <Wrapper>
@@ -16,29 +16,13 @@ const HealthView = () => {
           on mobile and online for everyone. To us, it’s not just work. We take
           pride in the solutions we deliver
         </SubTitle>
-        <Btn>Learn More</Btn>
+        <ButtonWrap text="Learn More" />
       </TextWrap>
     </Wrapper>
   );
 };
 
 export default HealthView;
-
-const Btn = styled.div`
-  color: #458ff6;
-  font-family: "MulishBold";
-  text-align: center;
-  font-size: 18px;
-  padding: 15px;
-  cursor: pointer;
-  border-radius: 55px;
-  border: 1.4px solid #458ff6;
-  max-width: 200px;
-
-  &:hover {
-    background: #f3f3f3;
-  }
-`;
 
 const SubTitle = styled.div`
   color: #7d7987;

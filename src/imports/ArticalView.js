@@ -1,3 +1,4 @@
+import ButtonWrap from "@/atoms/Button";
 import React from "react";
 import styled from "styled-components";
 
@@ -23,27 +24,12 @@ const ArticalView = () => {
           );
         })}
       </Artical>
-      <Btn>View All</Btn>
+      <ButtonWrap text="View More" />
     </Wrapper>
   );
 };
 
 export default ArticalView;
-
-const Btn = styled.div`
-  color: #458ff6;
-  font-family: "MulishBold";
-  text-align: center;
-  font-size: 18px;
-  padding: 10px 20px;
-  cursor: pointer;
-  border-radius: 55px;
-  border: 1.4px solid #458ff6;
-
-  &:hover {
-    background: #f3f3f3;
-  }
-`;
 
 const Read = styled.div`
   margin-top: 13px;

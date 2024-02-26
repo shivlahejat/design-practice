@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import NavBar from "./NavBar";
+import ButtonWrap from "@/atoms/Button";
 
 const LandingView = () => {
   return (
@@ -17,7 +18,7 @@ const LandingView = () => {
             accessible on mobile and online
             <br /> for everyone
           </SubTitle>
-          <ButtonWrap>Consult Today</ButtonWrap>
+          <ButtonWrap text="Consult Today" />
         </TextWrap>
         <ImageWrap />
       </Wrapper>
@@ -27,21 +28,7 @@ const LandingView = () => {
 
 export default LandingView;
 
-const ButtonWrap = styled.div`
-  margin-top: 20px;
-  padding: 20px;
-  border-radius: 55px;
-  background: #458ff6;
-  max-width: 200px;
-  text-align: center;
-  color: #fff;
-  font-family: "MulishBold";
-  cursor: pointer;
 
-  &:hover {
-    background: #457ff6;
-  }
-`;
 
 const SubTitle = styled.div`
   color: #7d7987;
