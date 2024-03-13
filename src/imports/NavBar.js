@@ -17,7 +17,7 @@ const NavBar = () => {
     <>
       <HeaderContainer>
         <NavContainer>
-          <NavBrand href="/">SHIV</NavBrand>
+          <NavBrand href="/">Testing</NavBrand>
           <NavLinkDesktop>
             <NavLink active={router.pathname === "/"}>
               <Link href="/">Home</Link>
