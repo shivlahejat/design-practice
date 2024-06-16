@@ -7,12 +7,12 @@ import LandingView from "@/imports/LandingView";
 import NavBar from "@/imports/NavBar";
 import ServiceView from "@/imports/ServiceView";
 import Head from "next/head";
-import React from "react";
+import React, { Fragment } from "react";
 import styled from "styled-components";
 
 const index = () => {
   return (
-    <>
+    <Fragment>
       <Head>
         <title>Landing Page</title>
       </Head>
@@ -25,7 +25,7 @@ const index = () => {
         <ArticalView />
         <Footer />
       </MainDivWrap>
-    </>
+    </Fragment>
   );
 };
 
