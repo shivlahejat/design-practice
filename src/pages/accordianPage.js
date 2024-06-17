@@ -1,4 +1,4 @@
-import React, { useState, Fragment } from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 
 const accordionData = [
@@ -24,7 +24,7 @@ const AccordionPage = () => {
   };
 
   return (
-    <Fragment>
+    <>
       {accordionData.map((item, index) => (
         <AccordionContainer key={index}>
           <AccordionHeader onClick={() => toggleAccordion(index)}>
@@ -42,7 +42,7 @@ const AccordionPage = () => {
           </AccordionContent>
         </AccordionContainer>
       ))}
-    </Fragment>
+    </>
   );
 };
 
